@@ -16,7 +16,7 @@
             --glass-bg: rgba(20, 20, 30, 0.75); 
             --glass-border: rgba(255, 255, 255, 0.15);
             --shadow-color: rgba(0, 0, 0, 0.6);
-            --arrow-color: #00e0ff; /* Farbe für den Pfeil */
+            --arrow-color: #00e0ff;
         }
 
         * {
@@ -255,7 +255,7 @@ Die Seite ist bald wieder da! :)
     <script>
         let countdownDate = new Date(`December 6, ${new Date().getFullYear()} 00:00:00`).getTime();
 
-        if (new Date().getMonth() > 11 || (new Date().getMonth() === 11 && new Date().getDate() > 6)) { // Monat 11 ist Dezember
+        if (new Date().getMonth() > 11 || (new Date().getMonth() === 11 && new Date().getDate() > 6)) {
             countdownDate = new Date(`December 6, ${new Date().getFullYear() + 1} 00:00:00`).getTime();
         }
 
@@ -281,12 +281,16 @@ Die Seite ist bald wieder da! :)
                 countdownElement.innerHTML =
                     "<span style='font-size: 3rem; color: var(--logo-color-start);'>JETZT LIVE!</span>";
                 document.querySelector('.comparison-section').style.display = 'none';
+                
+                setTimeout(() => {
+                    window.location.href = 'index.html'; 
+                }, 3000); 
+
+                return;
             }
         }
         
         const updateCountdown = setInterval(runCountdown, 1000);
-        
-        
     </script>
 
 </body>
