@@ -236,7 +236,7 @@ Die Seite ist bald wieder da! :)
                 </div>
             </div>
             <p style="margin-top: 20px;">
-                Neue Version am 6. Dezember!
+                Neue Version am 6. Dezember um 16:30 Uhr!
             </p>
         </div>
 
@@ -253,10 +253,10 @@ Die Seite ist bald wieder da! :)
     </main>
     
     <script>
-        let countdownDate = new Date(`December 6, ${new Date().getFullYear()} 00:00:00`).getTime();
+        let countdownDate = new Date(`December 6, ${new Date().getFullYear()} 16:30:00`).getTime();
 
         if (new Date().getMonth() > 11 || (new Date().getMonth() === 11 && new Date().getDate() > 6)) {
-            countdownDate = new Date(`December 6, ${new Date().getFullYear() + 1} 00:00:00`).getTime();
+            countdownDate = new Date(`December 6, ${new Date().getFullYear() + 1} 16:30:00`).getTime();
         }
 
         const countdownElement = document.getElementById('countdown');
