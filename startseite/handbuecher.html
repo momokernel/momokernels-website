@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handbücher</title>
+    <link rel="icon" href="../mkfavicon.ico" sizes="any">
+    <link rel="stylesheet" href="../style.css"> 
+    <script src="../script.js" defer></script>
+</head>
+<body>
+    
+    <header class="floating-nav">
+        <div class="nav-top-row">
+            <a href="../index.html" class="momokernel-logo">momokernel</a>
+
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav role="navigation">
+                <ul class="globalnav-list">
+                    <li class="globalnav-item" id="menu-toggle-item">
+                        <a href="#" class="globalnav-link">Menü</a>
+                    </li>
+                    <li class="globalnav-item"><a href="handbuecher.html" class="globalnav-link">Handbücher</a></li>
+                    <li class="globalnav-item"><a href="applauncher.html" class="globalnav-link">AppLauncher</a></li>
+                    <li class="globalnav-item"><a href="changelog.html" class="globalnav-link">Changelog</a></li>
+                    <li class="globalnav-item"><a href="downloads.html" class="globalnav-link globalnav-link-accent">Downloads</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="globalnav-flyout">
+            <div class="flyout-content-grid">
+                <div class="flyout-column">
+                    <h4>Projekte</h4>
+                    <ul>
+                        <li><a href="../projekte/fusionOS.html">fusionOS</a></li>
+                        <li><a href="../projekte/homeOS.html">homeOS</a></li>
+                        <li><a href="../projekte/themelibrary.html">ThemeLibrary</a></li>
+                        <li><a href="../projekte/next.html">N.E.X.T.</a></li>
+                        <li><a href="../projekte/z.html">Z- The Cold War</a></li>
+                        <li><a href="../projekte/frontlines.html">Frontlines</a></li>
+                    </ul>
+                </div>
+                
+                <div class="flyout-column">
+                    <h4>Anleitungen</h4>
+                    <ul>
+                        <li><a href="../about/windowsabertiefer.html">Windows- Was sich hinter dem System versteckt</a></li>
+                        <li><a href="../about/macosabertiefer.html">macOS- Was sich hinter dem System versteckt</a></li>
+                        <li><a href="../about/powerpointmorphism.html">Powerpoint Pro Präsentationen für Einsteiger</a></li>
+                        <li><a href="../about/finalcutprofuereinsteiger.html">Final Cut Pro für Einsteiger</a></li>
+                        <li><a href="../about/aftereffectsfuereinsteiger.html">After Effects für Einsteiger</a></li>
+                    </ul>
+                </div>
+                
+                <div class="flyout-column flyout-teaser-column">
+                    <h4>fusionOS Beta</h4>
+                    <a href="../OS Beta/fusionOSbeta.html" class="teaser-link">
+                        <div class="teaser-image-placeholder">BALD VERFÜGBAR</div>
+                        <p class="teaser-text">Warteliste für die fusionOS 0.1 Pre-Beta</p>
+                    </a>
+                    <div class="small-links">
+                        <a href="../extra/archiv.html">Archiv</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+  <main class="page-content">
+        
+        <div class="main-heading-container">
+            <h1 class="main-heading" style="color: var(--theme-primary-accent);">Handbücher</h1>
+        </div>
+
+
+        <p>Wähle ein OS, um das entsprechende Handbuch zu öffnen</p>
+        
+        <h2>Apple macOS/OS X Systeme</h2>
+        
+        <button id="toggleOsButtonMac" class="os-toggle-button">
+            macOS Systeme anzeigen (24)
+        </button>
+
+        <div id="osCollapseWrapperMac" class="os-collapse-content collapsed">
+            
+            <div class="os-grid">
+                
+                <a href="#" class="os-card" data-pdf="../pdfs/macos-7-1.pdf" data-title="Mac OS 7.1 Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem" style="background-color: #D3D3D3; border-radius: 0;"></div>
+                    </div>
+                    <h3>Mac OS 7.1</h3>
+                    <p>Das erste System in der 7er Reihe.</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/macos-9-2-2.pdf" data-title="Mac OS 9.2.2 Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem" style="background-color: #808080; border-radius: 0;"></div>
+                    </div>
+                    <h3>Mac OS 9.2.2</h3>
+                    <p>Das letzte Classic Mac OS.</p>
+                </a>
+                
+                <a href="#" class="os-card" data-pdf="../pdfs/macos-10-0-cheetah.pdf" data-title="Mac OS X 10.0 Cheetah Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem macos-cheetah-logo"></div>
+                    </div>
+                    <h3>Mac OS X 10.0 Cheetah</h3>
+                    <p>Der Beginn von OS X (März 2001).</p>
+                </a>
+                
+                <a href="#" class="os-card" data-pdf="../pdfs/macos-10-1-puma.pdf" data-title="Mac OS X 10.1 Puma Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem macos-puma-logo"></div>
+                    </div>
+                    <h3>Mac OS X 10.1 Puma</h3>
+                    <p>Die zweite Version der 10er Reihe.</p>
+                </a>
+                
+                <a href="#" class="os-card" data-pdf="../pdfs/macos-10-2-jaguar.pdf" data-title="Mac OS X 10.2 Jaguar Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem macos-jaguar-logo"></div>
+                    </div>
+                    <h3>Mac OS X 10.2 Jaguar</h3>
+                    <p>Einführung von Quartz Extreme.</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/macos-10-3-panther.pdf" data-title="Mac OS X 10.3 Panther Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem os-panther-emblem"></div>
+                    </div>
+                    <h3>Mac OS X 10.3 Panther</h3>
+                    <p>Mehr als 150 neue Funktionen.</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/macos-10-4-tiger.pdf" data-title="Mac OS X 10.4 Tiger Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem os-tiger-emblem"></div>
+                    </div>
+                    <h3>Mac OS X 10.4 Tiger</h3>
+                    <p>Spotlight, Dashboard und Automator.</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/macos-10-5-leopard.pdf" data-title="Mac OS X 10.5 Leopard Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem macos-leopard-logo"></div>
+                    </div>
+                    <h3>Mac OS X 10.5 Leopard</h3>
+                    <p>Time Machine und 64-Bit-Support.</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/macos-10-6-snowleopard.pdf" data-title="Mac OS X 10.6 Snow Leopard Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem os-snowleopard-emblem"></div>
+                    </div>
+                    <h3>Mac OS X 10.6 Snow Leopard</h3>
+                    <p>Vollständig optimiertes 64-Bit-OS.</p>
+                </a>
+                
+                <a href="#" class="os-card" data-pdf="../pdfs/macos-10-7-lion.pdf" data-title="OS X 10.7 Lion Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem macos-lion-logo"></div>
+                    </div>
+                    <h3>OS X 10.7 Lion</h3>
+                    <p>Erste Mac OS X-Version ohne PowerPC-Support.</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/macos-10-8-mountainlion.pdf" data-title="OS X 10.8 Mountain Lion Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem os-mountainlion-emblem"></div>
+                    </div>
+                    <h3>OS X 10.8 Mountain Lion</h3>
+                    <p>Mitteilungszentrale und AirPlay Mirroring.</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/macos-10-9-mavericks.pdf" data-title="OS X 10.9 Mavericks Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem macos-mavericks-logo"></div>
+                    </div>
+                    <h3>OS X 10.9 Mavericks</h3>
+                    <p>Der erste mit einem kalifornischen Codenamen.</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/macos-10-10-yosemite.pdf" data-title="OS X 10.10 Yosemite Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem macos-yosemite-logo"></div>
+                    </div>
+                    <h3>OS X 10.10 Yosemite</h3>
+                    <p>Komplettes Design-Update und Handoff.</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/macos-10-11-elcapitan.pdf" data-title="OS X 10.11 El Capitan Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem macos-elcapitan-logo"></div>
+                    </div>
+                    <h3>OS X 10.11 El Capitan</h3>
+                    <p>Performance- und Stabilitätsfokus.</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/macos-10-12-sierra.pdf" data-title="macOS 10.12 Sierra Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem os-sierra-emblem"></div>
+                    </div>
+                    <h3>macOS 10.12 Sierra</h3>
+                    <p>Siri kommt auf den Mac.</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/macos-10-13-highsierra.pdf" data-title="macOS 10.13 High Sierra Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem macos-highsierra-logo"></div>
+                    </div>
+                    <h3>macOS 10.13 High Sierra</h3>
+                    <p>APFS Dateisystem-Upgrade.</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/macos-10-14-mojave.pdf" data-title="macOS 10.14 Mojave Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem macos-mojave-logo"></div>
+                    </div>
+                    <h3>macOS 10.14 Mojave</h3>
+                    <p>Dark Mode und Stacks.</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/macos-10-15-catalina.pdf" data-title="macOS 10.15 Catalina Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem os-catalina-emblem"></div>
+                    </div>
+                    <h3>macOS 10.15 Catalina</h3>
+                    <p>iTunes wird durch Musik, Podcasts und TV ersetzt.</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/macos-11-bigsur.pdf" data-title="macOS 11 Big Sur Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem os-bigsur-emblem"></div>
+                    </div>
+                    <h3>macOS 11 Big Sur</h3>
+                    <p>Großes Redesign und Control Center.</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/macos-12-monterey.pdf" data-title="macOS 12 Monterey Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem os-monterey-emblem"></div>
+                    </div>
+                    <h3>macOS 12 Monterey</h3>
+                    <p>Universal Control und Shortcuts.</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/macos-13-ventura.pdf" data-title="macOS 13 Ventura Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem os-ventura-emblem"></div>
+                    </div>
+                    <h3>macOS 13 Ventura</h3>
+                    <p>Stage Manager und Continuity Camera.</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/macos-14-sonoma.pdf" data-title="macOS 14 Sonoma Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem os-sonoma-emblem"></div>
+                    </div>
+                    <h3>macOS 14 Sonoma</h3>
+                    <p>Widgets auf dem Desktop und Game Mode.</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/macos-15-sequoia.pdf" data-title="macOS 15 Sequoia Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem os-sequoia-emblem"></div>
+                    </div>
+                    <h3>macOS 15 Sequoia</h3>
+                    <p>iPhone Mirroring und Apple Intelligence.</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/macos-16-tahoe.pdf" data-title="macOS 26 Tahoe Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem os-tahoe-emblem"></div>
+                    </div>
+                    <h3>macOS 26 Tahoe</h3>
+                    <p>Der Nachfolger von Aqua ist gekommen.</p>
+                </a>
+                
+            </div>
+        </div>
+
+        <h2>Microsoft Windows Systeme</h2>
+
+        <button id="toggleOsButtonWin" class="os-toggle-button">
+            Windows Systeme anzeigen (12)
+        </button>
+
+        <div id="osCollapseWrapperWin" class="os-collapse-content collapsed">
+            
+            <div class="os-grid">
+                
+                <a href="#" class="os-card" data-pdf="../pdfs/windows-3-1.pdf" data-title="Windows 3.1 Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem os-windows-31-emblem"></div>
+                    </div>
+                    <h3>Windows 3.1</h3>
+                    <p>Die erste weit verbreitete Version.</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/windows-95.pdf" data-title="Windows 95 Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem os-windows-95-emblem"></div>
+                    </div>
+                    <h3>Windows 95</h3>
+                    <p>Einführung der Start-Schaltfläche.</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/windows-98.pdf" data-title="Windows 98 Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem os-windows-98-emblem"></div>
+                    </div>
+                    <h3>Windows 98</h3>
+                    <p>Verbesserte Internet-Integration.</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/windows-nt4.pdf" data-title="Windows NT 4.0 Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem os-windows-nt4-emblem"></div>
+                    </div>
+                    <h3>Windows NT 4.0</h3>
+                    <p>Die erste NT-Version mit der 95-Oberfläche.</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/windows-me.pdf" data-title="Windows Me Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem os-windows-me-emblem"></div>
+                    </div>
+                    <h3>Windows Me</h3>
+                    <p>Millennium Edition.</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/windows-2000.pdf" data-title="Windows 2000 Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem os-windows-2000-emblem"></div>
+                    </div>
+                    <h3>Windows 2000</h3>
+                    <p>Die letzte NT-Version vor XP.</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/windows-xp.pdf" data-title="Windows XP Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem os-windows-xp-emblem"></div>
+                    </div>
+                    <h3>Windows XP</h3>
+                    <p>Die langlebigste Windows-Version.</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/windows-vista.pdf" data-title="Windows Vista Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem os-windows-vista-emblem"></div>
+                    </div>
+                    <h3>Windows Vista</h3>
+                    <p>Einführung der Aero-Oberfläche.</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/windows-7.pdf" data-title="Windows 7 Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem os-windows-7-emblem"></div>
+                    </div>
+                    <h3>Windows 7</h3>
+                    <p>Der Nachfolger von Vista.</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/windows-8.pdf" data-title="Windows 8 Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem os-windows-8-emblem"></div>
+                    </div>
+                    <h3>Windows 8</h3>
+                    <p>Die Kachel-Oberfläche.</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/windows-10.pdf" data-title="Windows 10 Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem os-windows-10-emblem"></div>
+                    </div>
+                    <h3>Windows 10</h3>
+                    <p>Das letzte Windows (vor 11).</p>
+                </a>
+
+                <a href="#" class="os-card" data-pdf="../pdfs/windows-11.pdf" data-title="Windows 11 Handbuch">
+                    <div class="os-emblem-container">
+                        <div class="os-emblem os-windows-11-emblem"></div>
+                    </div>
+                    <h3>Windows 11</h3>
+                    <p>Das aktuelle Windows.</p>
+                </a>
+                
+            </div>
+        </div>
+
+    </main>
+
+<div id="pdf-modal" class="pdf-modal">
+        <div class="pdf-modal-content">
+            <span class="pdf-modal-close">&times;</span>
+            <h2 id="modal-title">PDF Vorschau</h2>
+            <iframe id="pdf-iframe" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+</body>
+</html>
